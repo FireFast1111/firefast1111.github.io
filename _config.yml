@@ -1,5 +1,12 @@
 title: My Jekyll Site
 description: A simple Jekyll site
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourusername.github.io" # the base hostname & protocol for your site
+url: "https://firefast1111.github.io" # the base hostname & protocol for your site
 remote_theme: "minima"
+minima:
+  skin: dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/FireFast1111" }
+  navigation:
+    - { title: Home, url: "/" }
+    - { title: About, url: "/about" }
