@@ -25,17 +25,25 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: false # Disable bundler cache to prevent conflicts
+          bundler-cache: false
       
-      - name: Install exact versions
+      - name: Install dependencies
         run: |
-          # First install specific versions of problematic gems
+          # First install webrick explicitly
           gem install webrick -v 1.8.1
+          
+          # Install Jekyll and theme components first
           gem install jekyll -v 4.3.3
           gem install jekyll-remote-theme -v 0.4.3
           gem install jekyll-include-cache -v 0.2.1
-          gem install github-pages -v 228 --conservative
-          gem install sass-embedded -v 1.77.1
+          
+          # Install specific sass version to avoid conflicts
+          gem uninstall sass -a -x --force || true
+          gem uninstall sass-embedded -a -x --force || true
+          gem install sass -v 3.7.4
+          
+          # Install github-pages without sass-embedded
+          gem install github-pages -v 228 --ignore-dependencies
       
       - name: Build with Jekyll
         run: |
