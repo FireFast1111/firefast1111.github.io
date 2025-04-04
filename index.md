@@ -1,8 +1,4 @@
 ---
-layout: default
-title: Home
+layout: home
+author_profile: true
 ---
-
-# Welcome to My Jekyll Site
-
-This is a simple Jekyll site hosted on GitHub Pages.
