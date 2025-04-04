@@ -5,29 +5,16 @@ description: "Your personal site"
 url: "https://firefast1111.github.io"
 baseurl: ""
 repository: "firefast1111/firefast1111.github.io"
+timezone: "America/New_York"  # Change to your timezone
 
 # Theme Settings
 remote_theme: mmistakes/minimal-mistakes@4.24.0
-minimal_mistakes_skin: "dark" # Options: dark, dirt, neon, plum
-
-# Plugins
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-# Markdown Processing
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+minimal_mistakes_skin: "neon"  # Neon dark theme
 
 # Site Author
 author:
   name: "Your Name"
-  bio: "Your short bio"
+  bio: "Your short bio here"
   location: "Your Location"
   email: "your.email@example.com"
   links:
@@ -37,14 +24,83 @@ author:
     - label: "Twitter"
       icon: "fab fa-twitter"
       url: "https://twitter.com/yourusername"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/yourusername"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Defaults
 defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: false
+
+# Navigation
+navigation:
+  main:
+    - title: "About"
+      url: /about/
+    - title: "Portfolio"
+      url: /portfolio/
+    - title: "Blog"
+      url: /year-archive/
+    - title: "Contact"
+      url: /contact/
+
+# Footer
+footer:
+  links:
+    - label: "Privacy Policy"
+      icon: "fas fa-fw fa-lock"
+      url: /privacy-policy/
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/firefast1111"
+
+# Social Share Buttons (Neon theme looks great with these!)
+share:
+  provider: "twitter"  # Options: twitter, facebook, linkedin, mastodon
+
+# Comments (disabled by default)
+comments:
+  provider: false  # Options: disqus, discourse, facebook, utterances, giscus
+
+# Analytics (uncomment to enable)
+# analytics:
+#   provider: google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
+#   google:
+#     tracking_id: "UA-XXXXX-X"
+#     anonymize_ip: true
+
+# Search
+search: true  # Enabled by default in Neon theme
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
