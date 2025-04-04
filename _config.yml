@@ -11,6 +11,10 @@ theme: jekyll-theme-minimal-mistakes
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
 
 # Minimal Mistakes Settings
 minimal_mistakes_skin: "default"
