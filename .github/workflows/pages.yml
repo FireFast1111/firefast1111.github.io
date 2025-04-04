@@ -31,13 +31,17 @@ jobs:
           bundler-cache: true
       
       - name: Install dependencies
-        run: gem install jekyll jekyll-remote-theme
+        run: |
+          gem install jekyll jekyll-remote-theme
+          gem install jekyll-include-cache
+          gem install github-pages
       
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
+          jekyll_version: 4.3.3 # Specify newer Jekyll version
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
