@@ -7,14 +7,12 @@ baseurl: ""
 repository: "firefast1111/firefast1111.github.io"
 
 # Jekyll & Theme
-theme: jekyll-theme-minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-optional-front-matter
-  - jekyll-titles-from-headings
-  - jekyll-relative-links
+  - jekyll-remote-theme
 
 # Minimal Mistakes Settings
 minimal_mistakes_skin: "default"
