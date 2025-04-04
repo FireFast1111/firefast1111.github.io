@@ -6,7 +6,7 @@ remote_theme: "minima"
 minima:
   skin: dark
   social_links:
-    - { platform: github, user_url: "https://github.com/FireFast1111" }
+    - { platform: github, user_url: "https://github.com/firefast1111" }
   navigation:
     - { title: Home, url: "/" }
     - { title: About, url: "/about" }
