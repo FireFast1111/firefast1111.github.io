@@ -1,8 +1,19 @@
 ---
-layout: default
-title: About
+title: "About Me"
+permalink: /about/
+layout: single
 ---
 
-# About Me
+Here's some information about me!
 
-This is the about page.
+## Education
+- Your degree, university, year
+
+## Skills
+- Skill 1
+- Skill 2
+- Skill 3
+
+## Interests
+- Interest 1
+- Interest 2
