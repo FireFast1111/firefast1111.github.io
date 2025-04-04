@@ -27,23 +27,23 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: false
       
-      - name: Install dependencies
+      - name: Install exact versions
         run: |
-          # First install webrick explicitly
-          gem install webrick -v 1.8.1
+          # Clear any existing installations
+          gem uninstall -a -x -I sass sass-embedded jekyll-sass-converter || true
           
-          # Install Jekyll and theme components first
+          # Install specific compatible versions
+          gem install webrick -v 1.8.1
           gem install jekyll -v 4.3.3
           gem install jekyll-remote-theme -v 0.4.3
           gem install jekyll-include-cache -v 0.2.1
           
-          # Install specific sass version to avoid conflicts
-          gem uninstall sass -a -x --force || true
-          gem uninstall sass-embedded -a -x --force || true
-          gem install sass -v 3.7.4
+          # Install sass dependencies first
+          gem install sass-embedded -v 1.75.0 --conservative
+          gem install jekyll-sass-converter -v 3.0.0 --conservative
           
-          # Install github-pages without sass-embedded
-          gem install github-pages -v 228 --ignore-dependencies
+          # Install github-pages with dependencies
+          gem install github-pages -v 228 --conservative
       
       - name: Build with Jekyll
         run: |
