@@ -1,94 +1,44 @@
 # Site Settings
-title: My Jekyll Site
-description: A simple Jekyll site using the Minimal Mistakes theme
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://firefast1111.github.io" # the base hostname & protocol for your site
-repository: "firefast1111/firefast1111.github.io" # GitHub repository URL
+title: "Your Name"
+name: "Your Name"
+description: "Your personal site"
+url: "https://firefast1111.github.io"
+baseurl: ""
+repository: "firefast1111/firefast1111.github.io"
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+# Jekyll & Theme
+theme: jekyll-theme-minimal-mistakes
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
-# Theme settings
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# Minimal Mistakes Settings
+minimal_mistakes_skin: "default"
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "This is your bio."
-  location         : "Your Location"
-  email            : "your.email@example.com"
+  name: "Your Name"
+  bio: "Your short bio"
+  location: "Your Location"
+  email: "your.email@example.com"
   links:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-github"
       url: "https://github.com/firefast1111"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-twitter"
       url: "https://twitter.com/yourusername"
-
-# Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/firefast1111"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/yourusername"
-
-# Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:year/:month/:day/:title:output_ext
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/yourusername"
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
       share: true
-      related: true
-
-# Exclude from processing.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - .gitignore
+      comments: false
