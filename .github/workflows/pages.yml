@@ -21,9 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -37,14 +34,13 @@ jobs:
           gem install github-pages
       
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-          jekyll_version: 4.3.3 # Specify newer Jekyll version
+        run: |
+          jekyll build --destination ./_site
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./_site
 
   deploy:
     environment:
