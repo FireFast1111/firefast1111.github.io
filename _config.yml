@@ -14,7 +14,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-remote-theme
-  - jekyll-include-cache # Add this for include_cached support
+  - jekyll-include-cache
 
 # Add this to force newer Liquid version
 liquid:
