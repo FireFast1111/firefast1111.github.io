@@ -8,11 +8,17 @@ repository: "firefast1111/firefast1111.github.io"
 
 # Jekyll & Theme
 remote_theme: mmistakes/minimal-mistakes@4.24.0
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-include-cache # Add this for include_cached support
+
+# Add this to force newer Liquid version
+liquid:
+  error_mode: strict
 
 # Minimal Mistakes Settings
 minimal_mistakes_skin: "default"
