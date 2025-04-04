@@ -6,28 +6,24 @@ url: "https://firefast1111.github.io"
 baseurl: ""
 repository: "firefast1111/firefast1111.github.io"
 
-# Jekyll & Theme
+# Theme Settings
 remote_theme: mmistakes/minimal-mistakes@4.24.0
+minimal_mistakes_skin: "dark" # Options: dark, dirt, neon, plum
 
+# Plugins
 plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-remote-theme
-  - jekyll-include-cache
 
-# Add this to force newer Liquid version
-liquid:
-  error_mode: strict
-
-# Minimal Mistakes Settings
-minimal_mistakes_skin: "neon"
-
-# Explicitly set markdown processor
+# Markdown Processing
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
 # Site Author
 author:
   name: "Your Name"
@@ -41,9 +37,6 @@ author:
     - label: "Twitter"
       icon: "fab fa-twitter"
       url: "https://twitter.com/yourusername"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/yourusername"
 
 # Defaults
 defaults:
