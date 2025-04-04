@@ -23,6 +23,11 @@ liquid:
 # Minimal Mistakes Settings
 minimal_mistakes_skin: "neon"
 
+# Explicitly set markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 # Site Author
 author:
   name: "Your Name"
