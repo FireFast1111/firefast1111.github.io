@@ -25,17 +25,21 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true
+          bundler-cache: false # Disable bundler cache to prevent conflicts
       
-      - name: Install dependencies
+      - name: Install exact versions
         run: |
-          gem install jekyll jekyll-remote-theme
-          gem install jekyll-include-cache
-          gem install github-pages
+          # First install specific versions of problematic gems
+          gem install webrick -v 1.8.1
+          gem install jekyll -v 4.3.3
+          gem install jekyll-remote-theme -v 0.4.3
+          gem install jekyll-include-cache -v 0.2.1
+          gem install github-pages -v 228 --conservative
+          gem install sass-embedded -v 1.77.1
       
       - name: Build with Jekyll
         run: |
-          jekyll build --destination ./_site
+          jekyll build --trace --destination ./_site
       
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
