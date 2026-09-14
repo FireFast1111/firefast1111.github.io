@@ -4,7 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: splash
 author_profile: true
----
+
 
 header:
   overlay_color: "#000"
@@ -16,3 +16,4 @@ header:
   caption: "Photo credit: [**Kill Six Billion Demons**](https://killsixbilliondemons.com/)"
 
 This is some text
+---
