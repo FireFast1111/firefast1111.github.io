@@ -5,3 +5,5 @@
 layout: splash
 author_profile: true
 ---
+
+This is some text
