@@ -15,5 +15,7 @@ header:
       url: "https://firefast1111.github.io/"
   caption: "Photo credit: [**Kill Six Billion Demons**](https://killsixbilliondemons.com/)"
 
-This is some text
 ---
+
+This is some text
+
