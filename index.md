@@ -6,4 +6,13 @@ layout: splash
 author_profile: true
 ---
 
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  actions:
+    - label: "Download"
+      url: "https://firefast1111.github.io/"
+  caption: "Photo credit: [**Kill Six Billion Demons**](https://killsixbilliondemons.com/)"
+
 This is some text
