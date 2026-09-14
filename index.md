@@ -9,7 +9,7 @@ author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_image: /assets/images/KSBD89.jpg
   actions:
     - label: "Download"
       url: "https://firefast1111.github.io/"
