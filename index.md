@@ -8,14 +8,11 @@ author_profile: true
 
 header:
   overlay_color: "#000"
-  overlay_filter: "0.5"
+  overlay_filter: "0.25"
   overlay_image: /assets/images/KSBD89.jpg
-  actions:
-    - label: "Download"
-      url: "https://firefast1111.github.io/"
-  caption: "Photo credit: [**Kill Six Billion Demons**](https://killsixbilliondemons.com/)"
+  caption: "Photo credit: [Kill Six Billion Demons](https://killsixbilliondemons.com/)"
 
 ---
-
+# I'm Ziya
 This is some text
 
