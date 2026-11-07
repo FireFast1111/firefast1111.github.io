@@ -61,7 +61,7 @@ author:
   bio    : "Bio bio bio bio bio bio bio"
   links:
     - label: "Email"
-      icon: "fa-solid fa-envelope"
+      icon: "fa-solid fa-square-envelope"
       url: "mailto:kavi.z.rao@gmail.com?subject=Hello!"
     - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
@@ -70,7 +70,7 @@ author:
 footer:
   links:
     - label: "Email"
-      icon: "fa-solid fa-envelope"
+      icon: "fa-solid fa-square-envelope"
       url: "mailto:kavi.z.rao@gmail.com?subject=Hello!"
     - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
